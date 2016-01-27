@@ -1,0 +1,55 @@
+.login-page {
+  padding-top: 50px
+}
+
+.title {
+  width: 30%;
+  text-align: center;
+}
+
+.title-signin {
+  color: pink;
+  margin: 20px auto;
+}
+
+.field {
+  width: 100%;
+}
+
+.form-signin {
+  width: 40%;
+  height: 50px;
+  margin: 0 30% 30px 30%;
+}
+
+.action {
+  width: 100%;
+}
+
+.button {
+  width: 30%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+
+}
+
+.button-pink {
+  width: 30%;
+  background-color: pink;
+  color: white;
+  margin: 0 35% 0 35%;
+}
+
+.user_image-userpage {
+  margin-left: 17%;
+}
+
+.form-image {
+  opacity: 0;
+}
+
+.user-avatar {
+  margin-top: 60px;
+  margin-left: 10px;
+}
