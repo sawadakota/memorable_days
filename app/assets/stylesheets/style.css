@@ -1,0 +1,30 @@
+h1, h2, h3, h4, h5, h6, p, body {
+  font-size: 18px;
+  color: #4a4a4a;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.user_image {
+  border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    background-color: #fff;
+    background-size: cover;
+    position: absolute;
+    position-top: 100px
+}
+
+header {
+  
+}
