@@ -1,0 +1,69 @@
+.new-page {
+  width: 80%;
+  min-height: 500px;
+  background-color: gray;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+.cover-image-upload {
+    height: 200px;
+    width: 50%;
+    background-image: url(/assets/noimage-big.png);
+    background-position: center center;
+    position: relative;
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    float: left;
+
+  }
+
+.cover-image-upload input {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      opacity: 0;
+      filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+      cursor: pointer;
+  }
+
+.write_form {
+  padding-top: 20px;
+  width: 50%;
+  float: left;
+}
+
+.search_query {
+  width: 50%;
+  height: 25px;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.post-friend {
+  width: 50%;
+  height: 25px;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.write_diary {
+  width: 90%;
+  height: 100px;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.button-new {
+  width: 10%;
+  margin-left: 200px;
+  margin-top: 20px;
+  background-color: pink;
+}

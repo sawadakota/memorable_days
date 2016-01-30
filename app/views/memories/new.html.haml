@@ -1,0 +1,14 @@
+.new-page
+  = form_for [current_user, @memory] do |f|
+    = f.submit "write", class: "button button-new"
+    .cover-image-upload
+      = f.file_field :image
+    .write_form
+      .post-search
+        = form_tag('/products/search', method: :get) do
+          %input.search_query{:name => "keyword", :placeholder => "tag friends!", :type => "text", :value => ""}/
+      .post-friend
+        = f.text_field :no_user_friend, placeholder: :"user name", class: "post-friend"
+      .tag-friends
+      .write_diary
+        = f.text_area :text, placeholder: :"write a diary", class: "write_diary"
