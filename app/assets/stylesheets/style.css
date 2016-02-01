@@ -42,6 +42,9 @@ header {
   border-radius: 5px;
   background-color: gray;
   text-decoration: none;
+  color: white;
+  font-size: 13px;
+  padding: 5px 10px;
 }
 
 .button-header {
