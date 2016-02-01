@@ -8,7 +8,7 @@
     = csrf_meta_tags
   %body
     %header.container
-      %p.title Memorble Days
+      = link_to "Memorable Days", root_path, class: "title-header"
       = link_to "my dairy"
       -if user_signed_in?
         = link_to "投稿", new_user_memory_path(current_user)

@@ -61,7 +61,7 @@ header {
 .title-header {
   float: left;
   color: white;
-  float: left;
+  text-decoration: none;
 }
 
 .text-decoration {
