@@ -48,3 +48,8 @@ end
 gem 'devise'
 gem 'haml-rails'
 gem 'erb2haml'
+
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
+gem 'uglifier', '>= 1.3.0'
+gem 'jquery-rails'

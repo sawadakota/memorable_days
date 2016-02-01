@@ -10,5 +10,6 @@
     %header.container
       %p.title Memorble Days
       = link_to "my dairy"
-      = link_to "投稿", new_user_memory_path(current_user)
+      -if user_signed_in?
+        = link_to "投稿", new_user_memory_path(current_user)
     = yield

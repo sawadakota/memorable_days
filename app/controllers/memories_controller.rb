@@ -4,5 +4,6 @@ class MemoriesController < ApplicationController
   end
 
   def create
+    redirect_to :back
   end
 end

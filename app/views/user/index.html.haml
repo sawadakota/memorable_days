@@ -1,0 +1,16 @@
+.mypage
+  .user_sidebar
+    .crearfix
+      .user_image
+      .user_name
+        = current_user.username
+    .button-mypage
+      = link_to "friends", root_path, class: "text-decoration white-text"
+    .mypage-search
+      = form_tag('/products/search', method: :get) do
+        %input.search_query{:name => "keyword", :placeholder => "tag friends!", :type => "text", :value => ""}/
+    .friends_area
+    .button_sign_out
+      = link_to "sign out", destroy_user_session_path, method: :delete, class: "button"
+  .calendar
+    #calendar
