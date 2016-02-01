@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20160128075957) do
     t.text     "image",          limit: 65535
     t.integer  "user_friend",    limit: 4
     t.string   "no_user_friend", limit: 255
+    t.integer  "user_id",        limit: 4
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
   end
