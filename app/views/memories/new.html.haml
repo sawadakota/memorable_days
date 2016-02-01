@@ -1,6 +1,6 @@
 .new-page
   = form_for [current_user, @memory] do |f|
-    = f.submit "write", class: "button button-new"
+    = f.submit "write", class: "button-new"
     .cover-image-upload
       = f.file_field :image
     .write_form
