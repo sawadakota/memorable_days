@@ -1,0 +1,50 @@
+.mypage {
+  background-color: white;
+  margin-left: 80px;
+  min-height: 500px;
+  width: 80%;
+}
+
+.user_sidebar {
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+.mypage .user_image {
+  float: left;
+}
+
+.user_name {
+  padding-top: 27px;
+  float: left;
+  margin-left: 20px;
+}
+
+.crearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.button-mypage {
+  background-color: pink;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  width: 120px;
+  text-align: center;
+  padding: 3px 10px;
+  margin: 10px 0 10px 0;
+}
+
+.user_sidebar .search_query {
+  width: 150px;
+}
+
+.friends_area {
+  width: 150px;
+  height: 300px;
+  border: solid 1px;
+  border-radius: 5px;
+}
+
