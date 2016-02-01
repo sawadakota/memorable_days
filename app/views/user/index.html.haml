@@ -2,6 +2,7 @@
   .user_sidebar
     .crearfix
       .user_image
+        = image_tag current_user.avatar.thumb.url
       .user_name
         = current_user.username
     .button-mypage
