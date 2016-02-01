@@ -8,6 +8,7 @@
 .user_sidebar {
   margin-left: 20px;
   padding-top: 10px;
+  float: left;
 }
 
 .mypage .user_image {
@@ -27,7 +28,7 @@
 }
 
 .button-mypage {
-  background-color: pink;
+  background-color: gray;
   text-decoration: none;
   color: white;
   border-radius: 5px;
@@ -35,6 +36,7 @@
   text-align: center;
   padding: 3px 10px;
   margin: 10px 0 10px 0;
+  padding: 5px 10px;
 }
 
 .user_sidebar .search_query {
@@ -48,3 +50,8 @@
   border-radius: 5px;
 }
 
+.calendar {
+  width: 500px;
+  float: left;
+  margin: 20px 10px 5px 20px;
+}
