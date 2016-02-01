@@ -7,9 +7,10 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    %header.container
+    %header
       = link_to "Memorable Days", root_path, class: "title-header"
-      = link_to "my dairy"
+      .button.header_button
+        = link_to "my dairy", root_path, class: "text-decoration white-text"
       -if user_signed_in?
         = link_to "投稿", new_user_memory_path(current_user)
     = yield
