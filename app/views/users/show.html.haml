@@ -5,8 +5,8 @@
         = image_tag @user.avatar.thumb.url
       .user_name
         = @user.username
-    .follow_button
-      = link_to "follow", user_friendships_path(@user), method: :post, class: "text-decoration black_text"
+    #follow_button
+      = render partial: 'friendship/follow_button'
     #search_list
     .friends_area
   .calendar
