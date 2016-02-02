@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       get 'search'
     end
     resources :memories, only: [:new, :create]
+    resources :friendships, only: [:create, :destroy]
   end
   root "users#index"
 end
