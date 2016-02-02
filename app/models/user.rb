@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
 
   has_many :memories
   mount_uploader :avatar, ImageUploader
+  has_many :friendships
 end
