@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   resources :users do
     resources :memories, only: [:new, :create]
   end
-  root "user#index"
+  root "users#index"
 end
