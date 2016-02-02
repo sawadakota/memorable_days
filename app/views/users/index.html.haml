@@ -12,6 +12,7 @@
         = text_field_tag :search, "", id: "inc_search", class: "search_query", name: "keyword", placeholder: "search friends!"
     #search_list
     .friends_area
+      = render partial: 'following_users', collection: @following_users
     .button_sign_out
       = link_to "sign out", destroy_user_session_path, method: :delete, class: "button"
   .calendar
