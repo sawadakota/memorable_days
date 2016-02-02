@@ -5,8 +5,12 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :memories
-  has_many :following, class_name: "Friendship", foreign_key: :following_id
+
+  has_many :following_to, class_name: Friendship, foreign_key: :following_id
+  has_many :following, through: :following_to, source: :follower
+  has_many :following_from, class_name: Friendship, foreign_key: :follower_id
+  has_many :follower, through: :following_from, source: :following
+
   mount_uploader :avatar, ImageUploader
 
-  belongs_to :last_edited_user, class_name: "User", foreign_key: :last_edited_user_id
 end

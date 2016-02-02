@@ -1,4 +1,4 @@
-- if current_user.following(following_id: current_user.id).present?
+- if current_user.following_to.where(follower_id: @user.id).present?
   .follow_button
     = link_to "follow", user_friendship_path(@user.id, @friendship.id), method: :delete, class: "text-decoration black-text", remote: true
 - else
