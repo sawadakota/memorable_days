@@ -55,4 +55,5 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'carrierwave'
 gem 'rmagick'
+gem 'acts-as-taggable-on', '~> 3.4'
 
