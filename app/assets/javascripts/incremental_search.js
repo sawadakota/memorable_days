@@ -1,4 +1,4 @@
-$(window).on('load', function() {
+$(document).on('ready page:load', function(){
   var
   preFunc = null,
   preInput = '',
