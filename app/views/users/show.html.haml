@@ -5,8 +5,8 @@
         = image_tag @user.avatar.thumb.url
       .user_name
         = @user.username
-    .button-mypage
-      = link_to "friends", root_path, class: "text-decoration white-text"
+    #follow_button
+      = render partial: 'friendships/follow_button'
     #search_list
     .friends_area
   .calendar
