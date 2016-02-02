@@ -8,8 +8,9 @@
     .button-mypage
       = link_to "friends", root_path, class: "text-decoration white-text"
     .mypage-search
-      = form_tag('/products/search', method: :get) do
-        %input.search_query{:name => "keyword", :placeholder => "search friends!", :type => "text", :value => ""}/
+      = form_tag('users/search', method: :get) do
+        = text_field_tag :search, "", id: "inc_search", class: "search_query", name: "keyword", placeholder: "search friends!"
+    #search_list
     .friends_area
     .button_sign_out
       = link_to "sign out", destroy_user_session_path, method: :delete, class: "button"

@@ -1,0 +1,13 @@
+.mypage
+  .user_sidebar
+    .crearfix
+      .user_image
+        = image_tag @user.avatar.thumb.url
+      .user_name
+        = @user.username
+    .button-mypage
+      = link_to "friends", root_path, class: "text-decoration white-text"
+    #search_list
+    .friends_area
+  .calendar
+    #calendar
