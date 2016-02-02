@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :memories
+  has_many :following, class_name: "Friendship", foreign_key: :following_id
   mount_uploader :avatar, ImageUploader
-  has_many :friendships
+
+  belongs_to :last_edited_user, class_name: "User", foreign_key: :last_edited_user_id
 end

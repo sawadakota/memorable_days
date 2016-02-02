@@ -6,7 +6,7 @@
       .user_name
         = @user.username
     .follow_button
-      = link_to "follow", root_path, class: "text-decoration black_text"
+      = link_to "follow", user_friendships_path(@user), method: :post, class: "text-decoration black_text"
     #search_list
     .friends_area
   .calendar
