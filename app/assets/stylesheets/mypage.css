@@ -44,6 +44,10 @@
 
 .user_sidebar .search_query {
   width: 70%;
+  height: 25px;
+  margin-bottom: 20px;
+  outline: none;
+  border-radius: 5px;
 }
 
 .friends_area {
@@ -63,4 +67,8 @@
 .button_sign_out {
   margin: 0 auto;
   margin-left: 33px;
+}
+
+.search_box {
+  width: 70%;
 }

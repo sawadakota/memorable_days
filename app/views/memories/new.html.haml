@@ -5,7 +5,7 @@
       = f.file_field :image
     .write_form
       .post-search
-        = text_field_tag 'tag_list[]', "", placeholder: "tag friends", class: "search_query"
+        = text_field_tag 'tag_list[]', "", placeholder: "tag friends", class: "post_search_query"
       .post-friend
         = f.text_field :no_user_friend, placeholder: :"user name", class: "post-friend"
       .tag-friends
