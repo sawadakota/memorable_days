@@ -8,7 +8,13 @@ class MemoriesController < ApplicationController
     current_user.memories.create(memory_params)
   end
 
+  def search
+    @search_users = User.where('username LIKE(?)',"%#{params[:keyword]}%").order('username ASC').limit(20)
+  end
 
+  def add_tag_friend
+    @user = User.find(params[:user_id])
+  end
 
   private
   def memory_params
