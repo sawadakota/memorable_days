@@ -1,5 +1,5 @@
 .new-page
-  = form_for [current_user, @memory], :html => {:onsubmit => "return false;"} do |f|
+  = form_for [current_user, @memory] do |f|
     = f.submit "write", class: "button-new"
     .cover-image-upload
       = f.file_field :image
