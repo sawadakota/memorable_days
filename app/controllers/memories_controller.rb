@@ -18,6 +18,7 @@ class MemoriesController < ApplicationController
 
   private
   def memory_params
-    params.require(:memory).permit(:text, :image, :user_friend, :no_user_friend)
+    tag_list = params[:tag_list]
+    params.require(:memory).permit(:text, :image, :user_friend, :no_user_friend).merge(tag_list: tag_list)
   end
 end
