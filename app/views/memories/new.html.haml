@@ -5,9 +5,10 @@
       = f.file_field :image
     .write_form
       .post-search
-        = text_field_tag 'tag_list[]', "", placeholder: "tag friends", class: "post_search_query"
+        = text_field_tag :search, "", id: "inc_search", class: "post_search_query", name: "keyword", placeholder: "search friends!"
+      #search_list
       .post-friend
         = f.text_field :no_user_friend, placeholder: :"user name", class: "post-friend"
-      .tag-friends
+      #tag-friends
       .write_diary
         = f.text_area :text, placeholder: :"write a diary", class: "write_diary"
