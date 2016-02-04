@@ -1,8 +1,9 @@
 .new-page
   = form_for [current_user, @memory] do |f|
     = f.submit "write", class: "button-new"
-    .cover-image-upload
-      = f.file_field :image
+    .thumb_form
+      .cover-image-upload#preview
+        = f.file_field :image
     .write_form
       .post-search
         = text_field_tag :search, "", id: "inc_search", class: "post_search_query", name: "keyword", placeholder: "search friends!"
