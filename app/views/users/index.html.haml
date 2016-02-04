@@ -17,3 +17,5 @@
       = link_to "sign out", destroy_user_session_path, method: :delete, class: "button"
   .calendar
     #calendar
+    %input#page_set{name: "page[set]", type: "hidden", value: "#{current_user.id}"}/
+
