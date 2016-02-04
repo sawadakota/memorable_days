@@ -6,6 +6,7 @@ class CreateMemories < ActiveRecord::Migration
       t.integer     :user_friend
       t.string      :no_user_friend
       t.references  :user
+      t.string      :date
       t.timestamps null: false
     end
   end
