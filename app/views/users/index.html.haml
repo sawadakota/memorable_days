@@ -18,4 +18,5 @@
   .calendar
     #calendar
     %input#page_set{name: "page[set]", type: "hidden", value: "#{current_user.id}"}/
-
+    - @memories.each do |memory|
+      %input#memory_image{name: "#{memory.date}", type: "hidden", value: "#{memory.image}"}/
