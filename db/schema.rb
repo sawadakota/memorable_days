@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20160202005351) do
     t.integer  "user_friend",    limit: 4
     t.string   "no_user_friend", limit: 255
     t.integer  "user_id",        limit: 4
+    t.string   "date",           limit: 255
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
   end
