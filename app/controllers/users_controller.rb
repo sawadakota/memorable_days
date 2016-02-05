@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   def index
     @following_users = current_user.following
+    @memories = current_user.memories
   end
 
   def search
