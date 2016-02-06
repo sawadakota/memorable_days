@@ -2,7 +2,11 @@ $(document).on('ready page:load', function(){
     $('#calendar').fullCalendar({
         dayClick: function(date, jsEvent, view) {
             var user_id = $('#page_set').val()
-            window.location = "/users/" + user_id + "/memories/new?date=" + date.format()
+            if ($(this).children().hasClass('photo')) {
+              window.location = "/users/" + user_id + "/memories/"
+            }else {
+              window.location = "/users/" + user_id + "/memories/new?date=" + date.format()
+            }
             }
             });
 
