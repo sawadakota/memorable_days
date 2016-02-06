@@ -9,6 +9,9 @@ class MemoriesController < ApplicationController
   end
 
   def edit
+    @memory = Memory.find(params[:id])
+    @ids = @memory.tag_list
+    @users = User.find(@ids)
   end
 
   def update
