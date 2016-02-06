@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     collection do
       get 'search'
     end
-    resources :memories, only: [:new, :create] do
+    resources :memories, only: [:new, :create, :edit, :update] do
       collection do
         get 'search'
         get 'add_tag_friend'
