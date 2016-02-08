@@ -76,9 +76,13 @@
 .following-text {
   font-size: 12px;
   padding-top: 8px;
+  float: left;
 }
 
-.mini_user_image img {
+.mini_user_image_mypage {
+}
+
+.mini_user_image_mypage img {
     border: 2px solid #ddd;
     border-radius: 50%;
     width: 30px;
@@ -90,3 +94,8 @@
     position-top: 100px;
     float: left;
 }
+
+.following_user {
+  clear: both;
+}
+

@@ -1,4 +1,6 @@
-.mini_user_image
-  = image_tag following_users.avatar.thumb.url
-.following-text
-  = following_users.username
+= link_to user_path(following_users.id) do
+  .following_user
+    .mini_user_image_mypage
+      = image_tag following_users.avatar.thumb.url
+    .following-text
+      = following_users.username
