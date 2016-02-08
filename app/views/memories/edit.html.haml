@@ -18,3 +18,7 @@
       .write_diary
         = f.text_area :text, placeholder: :"write a diary", class: "write_diary"
         = f.hidden_field :date, value: "#{params[:date]}"
+:css
+  .cover-image-upload {
+    background-image: url(#{@memory.image});
+  }
