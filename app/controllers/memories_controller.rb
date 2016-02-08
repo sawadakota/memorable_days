@@ -9,9 +9,15 @@ class MemoriesController < ApplicationController
   end
 
   def edit
+    @memory = Memory.find(params[:id])
+    @ids = @memory.tag_list
+    @users = User.find(@ids)
   end
 
   def update
+    redirect_to :root
+    @memory = Memory.find(params[:id])
+    @memory.update(memory_params)
   end
 
   def search

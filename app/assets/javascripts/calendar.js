@@ -5,7 +5,7 @@ $(document).on('ready page:load', function(){
             var day = $(this).data("date")
             if ($(this).children().hasClass('photo')) {
               var id = document.getElementById(day).name
-              window.location = "/users/" + user_id + "/memories/" + id + "/edit/"
+              window.location = "/users/" + user_id + "/memories/" + id + "/edit?date=" + date.format()
             }else {
               window.location = "/users/" + user_id + "/memories/new?date=" + date.format()
             }
@@ -22,4 +22,3 @@ $(document).on('ready page:load', function(){
         });
 
 });
-
