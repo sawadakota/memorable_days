@@ -12,5 +12,6 @@ Rails.application.routes.draw do
     end
     resources :friendships, only: [:create, :destroy]
   end
+  get "/users/:id/memories/:memory_id/search" => "memories#search"
   root "users#index"
 end
