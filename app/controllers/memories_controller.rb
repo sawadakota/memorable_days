@@ -15,6 +15,9 @@ class MemoriesController < ApplicationController
   end
 
   def update
+    redirect_to :root
+    @memory = Memory.find(params[:id])
+    @memory.update(memory_params)
   end
 
   def search
