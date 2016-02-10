@@ -18,3 +18,39 @@
   padding: 5px 10px;
   border: solid 1px;
 }
+
+#comment {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color:rgba(0, 0, 0, 0.6);
+}
+
+#comment_content {
+  position: absolute;
+  width: 25%;
+  height: 50%;
+  left: calc(65% - 25vw);
+  top: calc(45% - 25vh);
+  padding: 5px 10px;
+  border: 1px solid #eee;
+  background: white;
+  border: solid 1px;
+  z-index: 10;
+}
+
+.like_button {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+
+.comment_form {
+  float: left;
+  margin-left: 10px;
+}
+
+.hide {
+  display: none;
+}
