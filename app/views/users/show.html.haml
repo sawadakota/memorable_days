@@ -11,3 +11,15 @@
     .friends_area
   .calendar
     #calendar
+    %input#page_set{name: "page[set]", type: "hidden", value: "#{current_user.id}"}/
+    - @memories.each do |memory|
+      %input{name: "#{memory.id}", type: "hidden", value: "#{memory.image}", id: "#{memory.date}"}/
+    %input#guest_user{name: "page[set]", type: "hidden", value: "guest"}/
+  #comment
+    #comment_content.hide
+      #comment_image
+      #comment_tag
+      .like_button
+        = link_to image_tag("icom_heart_red.svg")
+      .comment_form
+        = text_field :comment, placeholder: "comment"

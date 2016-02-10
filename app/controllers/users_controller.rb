@@ -11,5 +11,6 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @friendship = current_user.following_to.find_by(follower_id: params[:id])
+    @memories = @user.memories
   end
 end
