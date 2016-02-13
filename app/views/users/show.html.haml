@@ -7,8 +7,6 @@
         = @user.username
     #follow_button
       = render partial: 'friendships/follow_button'
-    #search_list
-    .friends_area
   .calendar
     #calendar
     %input#page_set{name: "page[set]", type: "hidden", value: "#{current_user.id}"}/
