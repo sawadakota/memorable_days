@@ -9,5 +9,7 @@ tr .fc-sat {
 .photo {
   width: 78px;
   height: 64px;
+  background-position: center center;
+  background-size: cover;
 }
 
