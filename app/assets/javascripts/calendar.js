@@ -9,11 +9,17 @@ $(document).on('ready page:load', function(){
             // var top = top * 0.8
             // var left = left * 0.8
             var image = $("#" + day).val()
-
             if (guest == "guest") {
-              $('#comment_content').removeClass('hide')
+              Object.keys(gon.memory_images).forEach(function (key) {
+              if (key == day && guest == "guest") {
+                  $('#comment_content').removeClass('hide')
               // $('#comment_content').css({'left': left, 'top': top});
-              $('#comment_content').prepend('<img class="photo" style="background-image: url('+image+')" />')
+                  $('#comment_content').prepend('<img class="modal_image" style="background-image: url('+ gon.memory_images[key]+')" />')
+                  $.each(gon.tag_image[day + "image"] , function(){
+                    $('#comment_image').append('<img class="mini_user_image" style="background-image: url('+ this +')" />')
+                  })
+              }
+            })
             } else {
               if ($(this).children().hasClass('photo')) {
                 var id = document.getElementById(day).name
@@ -33,7 +39,4 @@ $(document).on('ready page:load', function(){
             .html('<img class="photo"  style="background-image: url('+image+')" />');
           }
         });
-    // $('body').on('click', function() {
-    //   $('#comment_content').addClass('hide')
-    // })
 });
