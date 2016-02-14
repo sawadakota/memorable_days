@@ -33,5 +33,7 @@ class UsersController < ApplicationController
     end
     gon.tag_user_id = @tag_id
     gon.tag_image = @tag_image
+    gon.tag_user_id = @tag_id
   end
 end
+
