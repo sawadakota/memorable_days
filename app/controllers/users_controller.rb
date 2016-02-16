@@ -12,6 +12,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @friendship = current_user.following_to.find_by(follower_id: params[:id])
     @memories = @user.memories
+    @comment = Comment.new
 
     @memory_images = {}
     @memories.each do |memory|

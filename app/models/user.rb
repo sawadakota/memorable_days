@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :memories
+  has_many :comments
 
   has_many :following_to, class_name: Friendship, foreign_key: :following_id
   has_many :following, through: :following_to, source: :follower
