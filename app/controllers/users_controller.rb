@@ -25,7 +25,7 @@ class UsersController < ApplicationController
     @memories.each do |memory|
       tag_image = []
       tag_user_id = memory.tag_list.uniq
-      @tag_id[memory.date + "id"] = tag_user_id
+       @tag_id[memory.date + "id"] = tag_user_id
       tag_user_id.each do |id|
         user = User.find(id)
         tag_image << user.avatar_url
@@ -36,5 +36,15 @@ class UsersController < ApplicationController
     gon.tag_image = @tag_image
     gon.tag_user_id = @tag_id
   end
-end
 
+  def follows
+    @follows = current_user.following
+    @tags = []
+    current_user.memories.each do |memory|
+      @tags.concat(memory.tag_list)
+    end
+    @tagging_count = @tags
+    @tag_user = @tagging_count.group_by {|item| item.to_i}
+    gon.follows_count = @follows.count
+  end
+end

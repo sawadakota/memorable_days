@@ -6,7 +6,7 @@
       .user_name
         = current_user.username
     .button-mypage
-      = link_to "friends", root_path, class: "text-decoration white-text"
+      = link_to "friends", follows_user_path(current_user), class: "text-decoration white-text"
     .mypage-search
       = form_tag('users/search', method: :get) do
         = text_field_tag :search, "", id: "inc_search", class: "search_query", name: "keyword", placeholder: "search friends!"

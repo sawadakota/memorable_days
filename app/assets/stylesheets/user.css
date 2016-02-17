@@ -73,3 +73,23 @@
     /*position: absolute;*/
     position-top: 100px;
 }
+
+.friends .mini_user_image {
+  border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: #fff;
+    background-size: cover;
+}
+
+.friends .user_image {
+  border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    background-color: #fff;
+    background-size: cover;
+}
