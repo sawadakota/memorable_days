@@ -4,6 +4,9 @@ Rails.application.routes.draw do
     collection do
       get 'search'
     end
+    member do
+      get 'follows'
+    end
     resources :memories, only: [:new, :create, :edit, :update] do
       resources :comments, only: [:create]
       collection do
