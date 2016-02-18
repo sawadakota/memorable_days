@@ -90,3 +90,8 @@ header {
   width: 80px;
   height: 20px;
 }
+
+#error_explanation {
+  width: 500px;
+  margin: 0 auto;
+}
