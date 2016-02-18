@@ -1,8 +1,8 @@
 - if @tag_user[follow_friends.id].length < 2
-  = link_to user_path(follow_friends) do
+  = link_to friend_user_path(follow_friends) do
     %div{id: "mini_user_image" + follow_friends_counter.to_s}
       = image_tag follow_friends.avatar_url,id: "mini_user_image" + follow_friends_counter.to_s, class: "mini_user_image"
 - else @tag_user[follow_friends.id].length < 5
-  = link_to user_path(follow_friends) do
+  = link_to friend_user_path(follow_friends) do
     %div{id: "user_image" + follow_friends_counter.to_s}
       = image_tag follow_friends.avatar_url, id: "user_image" + follow_friends_counter.to_s, class: "user_image"

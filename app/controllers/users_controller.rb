@@ -60,4 +60,8 @@ class UsersController < ApplicationController
     @tag_user = @tagging_count.group_by {|item| item.to_i}
     gon.follows_count = @follows.count
   end
+
+  def friend
+    @friend = User.find(params[:id])
+  end
 end
