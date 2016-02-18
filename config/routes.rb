@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     end
     member do
       get 'follows'
+      get 'friend'
     end
     resources :memories, only: [:new, :create, :edit, :update] do
       resources :comments, only: [:create]

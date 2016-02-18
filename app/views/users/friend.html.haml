@@ -1,0 +1,18 @@
+.mypage
+  .friend_header
+    .current_user
+      .user_image
+        = image_tag current_user.avatar_url
+      = current_user.username
+    .friend_user
+      %p #{@friend.username}
+      .user_image
+        = link_to user_path(@friend) do
+          = image_tag @friend.avatar_url
+  .shere_memory
+    - current_user.memories.each do |memory|
+      - if tags = memory.tag_list.include?(@friend.id.to_s)
+        .memory
+          %span #{memory.date}
+          %br
+          = image_tag memory.image_url

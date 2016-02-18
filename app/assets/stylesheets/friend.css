@@ -1,0 +1,38 @@
+.friend_header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.friend_header .current_user {
+  float: left;
+  padding-left: 50px;
+}
+
+.friend_header .friend_user {
+  float: right;
+  padding-right: 50px;
+}
+
+.friend_header p {
+  float: left;
+}
+
+.shere_memory {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.memory {
+  float: left;
+  width: 300px
+}
+
+.memory img{
+  width: 250px;
+  height: 230px;
+  margin: 0 auto;
+}
+
+.memory span {
+}
