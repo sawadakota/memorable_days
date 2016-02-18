@@ -35,6 +35,19 @@ class UsersController < ApplicationController
     gon.tag_user_id = @tag_id
     gon.tag_image = @tag_image
     gon.tag_user_id = @tag_id
+
+    @comments = {}
+    @memories.each do |memory|
+      @comments[memory.date + "comments"] = memory.comments
+    end
+    gon.comments = @comments
+    gon.current_user = current_user.id
+
+    @memory_id = {}
+    @memories.each do |memory|
+      @memory_id[memory.date] = memory.id
+    end
+    gon.memory_id = @memory_id
   end
 
   def follows

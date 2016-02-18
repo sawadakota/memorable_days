@@ -20,6 +20,12 @@ $(document).on('ready page:load', function(){
                     $('#comment_image').append('<a href= /users/'+ gon.tag_user_id[day + "id"][num] +' ><img class="mini_user_image" style="background-image: url('+ this +')" /></a>')
                     num += 1
                   })
+                  $(".comment_form").append('<form action="/users/' + gon.current_user + '/memories/' + gon.memory_id[day] + '/comments" method="post"><input type="text" name="text" size="30"><input hidden value='+ $("#authenticity_token").val() + ' name="authenticity_token" /><input type="submit"></form>')
+                  var sum = 0
+                  $.each(gon.comments[day + "comments"], function(){
+                    $(".comment_form").append("<p>" + gon.comments[day + "comments"][sum]["text"] + "</p>")
+                    sum += 1
+                  })
               }
             })
             } else {
