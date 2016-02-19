@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title MemorableDays
+    = include_gon
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'memorable', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %header
+      = link_to "Memorable Days", root_path, class: "title-header"
+      .button.header_button
+        = link_to "my dairy", root_path, class: "text-decoration white-text"
+    = yield
