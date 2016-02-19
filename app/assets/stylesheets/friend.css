@@ -27,6 +27,13 @@
 .shere_memory {
   width: 600px;
   margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.shere_memory:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .memory {
