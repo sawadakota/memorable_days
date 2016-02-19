@@ -1,3 +1,10 @@
 .mypage
+  .friend_header
+    .current_user
+      .user_image
+        = image_tag current_user.avatar_url
+      %p #{current_user.username}
   .friends
     = render partial: 'follow_friends', collection: @follows
+- content_for(:javascript) do
+  = javascript_include_tag 'friend'

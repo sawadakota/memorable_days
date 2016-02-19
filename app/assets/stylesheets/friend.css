@@ -4,6 +4,10 @@
   clear: both;
 }
 
+.friend_header {
+  padding-top: 15px;
+}
+
 .friend_header .current_user {
   float: left;
   padding-left: 50px;
@@ -16,6 +20,8 @@
 
 .friend_header p {
   float: left;
+  margin-top: 23px;
+  margin-left: 10px;
 }
 
 .shere_memory {
