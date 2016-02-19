@@ -1,4 +1,7 @@
 $(document).on('ready page:load', function(){
+    $(document).on("keypress", "input:not(.allow_submit)", function(event) {
+      return event.which !== 13;
+    });
     $('#calendar').fullCalendar({
         dayClick: function(date, jsEvent, view) {
             var user_id = $('#page_set').val()
