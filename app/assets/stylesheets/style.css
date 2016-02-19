@@ -95,3 +95,10 @@ header {
   width: 500px;
   margin: 0 auto;
 }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
