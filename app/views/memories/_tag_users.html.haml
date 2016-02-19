@@ -1,3 +1,4 @@
 .mini_user_image
-  = image_tag @user.avatar
+  - unless @user.id == current_user.id
+    = image_tag @user.avatar
   = hidden_field_tag 'tag_list[]', "#{@user.id}", id: @user.id
