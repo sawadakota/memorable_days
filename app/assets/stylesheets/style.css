@@ -35,7 +35,8 @@ header {
     background-color: #fff;
     background-size: cover;
     /*position: absolute;*/
-    position-top: 100px
+    position-top: 100px;
+    object-fit: cover;
 }
 
 .button {

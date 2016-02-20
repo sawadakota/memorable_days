@@ -94,6 +94,7 @@
     position: absolute;
     background-color: #fff;
     background-size: cover;
+    object-fit: cover;
 }
 
 .friends .user_image {
@@ -104,4 +105,5 @@
     position: absolute;
     background-color: #fff;
     background-size: cover;
+    object-fit: cover;
 }

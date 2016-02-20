@@ -1,6 +1,6 @@
 .mypage {
   background-color: white;
-  margin-left: 80px;
+  margin: 0 auto;
   min-height: 500px;
   width: 80%;
   position: relative;
@@ -10,7 +10,6 @@
   margin-left: 20px;
   padding-top: 10px;
   float: left;
-  margin-right: 30px;
 }
 
 .mypage .user_image {
@@ -34,7 +33,7 @@
   text-decoration: none;
   color: white;
   border-radius: 5px;
-  width: 70%;
+  width: 100%;
   text-align: center;
   font-size: 12px;
   margin-top: 10px;
@@ -44,7 +43,7 @@
 }
 
 .user_sidebar .search_query {
-  width: 70%;
+  width: 100%;
   height: 25px;
   margin-bottom: 20px;
   outline: none;
@@ -52,16 +51,26 @@
 }
 
 .friends_area {
-  width: 70%;
+  width: 100%;
   height: 250px;
   border: solid 1px;
   border-radius: 5px;
+  float: left;
 }
 
-.calendar {
-  width: 550px;
+.fc-view-container {
+  width: 500px;/*
+  height: 100px;*/
   float: left;
-  margin: 20px 10px 5px 20px;
+}
+/*
+.fc-view {
+  height: 100%;
+}*/
+
+.calendar {
+  float: left;
+  margin: 20px 10px 5px 40px;
 }
 
 
@@ -100,3 +109,11 @@
   clear: both;
 }
 
+.fc-day {
+  width:  71px;
+  height: 58px;
+}
+
+.fc-week {
+  max-height: 58px;
+}
