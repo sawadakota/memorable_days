@@ -35,7 +35,8 @@ header {
     background-color: #fff;
     background-size: cover;
     /*position: absolute;*/
-    position-top: 100px
+    position-top: 100px;
+    object-fit: cover;
 }
 
 .button {
@@ -90,3 +91,15 @@ header {
   width: 80px;
   height: 20px;
 }
+
+#error_explanation {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+

@@ -1,6 +1,36 @@
 .login-page {
   padding-top: 50px;
   background-color: white;
+  padding: 50px;
+}
+
+.login-page .user-image {
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    background-color: #fff;
+    background-size: cover;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+
+.login-page .user-image input {
+  display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    opacity: 0;
+}
+
+.field {
+  width: 100%;
 }
 
 .title {
@@ -11,6 +41,8 @@
 .title-signin {
   color: pink;
   margin: 20px auto;
+  float: left;
+  margin-left: 370px;
 }
 
 .field {
@@ -32,6 +64,8 @@
   background-color: pink;
   color: white;
   margin: 0 35% 0 35%;
+  height: 30px;
+  border: none;
 }
 
 .user_image-userpage {
@@ -45,4 +79,22 @@
 .user-avatar {
   margin-top: 60px;
   margin-left: 10px;
+}
+
+.sign_in_button {
+  margin-right: 50px;
+  position: absolute;
+  right: 120px;
+}
+
+#image_button {
+  position-top: 100px;
+}
+
+#name .thumb {
+  height: 75px;
+  width: 75px;
+  border-radius: 75px;
+  position: absolute;
+  left: 0;
 }

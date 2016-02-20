@@ -3,7 +3,7 @@
     .current_user
       .user_image
         = image_tag current_user.avatar_url
-      = current_user.username
+      %p #{current_user.username}
     .friend_user
       %p #{@friend.username}
       .user_image

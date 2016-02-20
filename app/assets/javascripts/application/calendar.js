@@ -17,6 +17,8 @@ $(document).on('ready page:load', function(){
               Object.keys(gon.memory_images).forEach(function (key) {
               if (key == day && guest == "guest") {
                   $('#comment_content').removeClass('hide')
+                  $('#comment').removeClass('hide')
+                  $('#calendar').addClass('hide')
               // $('#comment_content').css({'left': left, 'top': top});
                   $('#comment_content').prepend('<img class="modal_image" style="background-image: url('+ gon.memory_images[key]+')" />')
                   $.each(gon.tag_image[day + "image"] , function(){
@@ -50,4 +52,11 @@ $(document).on('ready page:load', function(){
             .html('<img class="photo"  style="background-image: url('+image+')" />');
           }
         });
+
+        $('#modal-close').on('click', function(){
+  console.log("sbfdgberagb")
+          $('#comment_content').addClass('hide')
+          $('#comment').addClass('hide')
+          $('#calendar').removeClass('hide')
+        })
 });

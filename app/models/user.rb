@@ -14,4 +14,8 @@ class User < ActiveRecord::Base
 
   mount_uploader :avatar, ImageUploader
 
+  validates_presence_of :username, :message => "を登録してください"
+  validates_uniqueness_of :username, :message => "そのユーザー名は既に使用されています"
+  validates_presence_of :avatar, :message => "を登録してください"
+
 end

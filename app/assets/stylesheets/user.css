@@ -27,6 +27,19 @@
   background-color:rgba(0, 0, 0, 0.6);
 }
 
+#comment_image {
+  float: left;
+}
+
+#comment_cansel {
+  float: right;
+}
+
+#comment_cansel a {
+  text-decoration: none;
+  color: black;
+}
+
 #comment_content {
   position: absolute;
   width: 50%;
@@ -81,6 +94,7 @@
     position: absolute;
     background-color: #fff;
     background-size: cover;
+    object-fit: cover;
 }
 
 .friends .user_image {
@@ -91,4 +105,5 @@
     position: absolute;
     background-color: #fff;
     background-size: cover;
+    object-fit: cover;
 }

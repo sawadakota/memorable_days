@@ -1,4 +1,4 @@
-.mypage
+.mypage.clearfix
   .user_sidebar
     .crearfix
       .user_image
@@ -15,7 +15,7 @@
       = render partial: 'following_users', collection: @following_users
     .button_sign_out
       = link_to "sign out", destroy_user_session_path, method: :delete, class: "button"
-  .calendar
+  .col-xs-6.col-sm-6.col-md-6.col-lg-6.calendar
     #calendar
     %input#page_set{name: "page[set]", type: "hidden", value: "#{current_user.id}"}/
     - @memories.each do |memory|
